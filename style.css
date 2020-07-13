@@ -1,3 +1,39 @@
+:root {
+  --input-color: white;
+  --output-color: white;
+  --switch-color-on: #34A7C1;
+  --switch-color-off: #EEEEEE;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  background-color: #363e56;
+  border-radius: 8px;
+  height: 600px;
+  max-width: 600px;
+  padding: 8px;
+}
+
+div {
+  margin-top: 1rem;
+}
+
+h1 {
+  color: aquamarine;
+  text-align: center;
+}
+
+.input-color {
+  background: var(--input-color);
+  height: 60px;
+  width: 100%;
+}
+
+.altered-color {
+  background: var(--output-color);
+  height: 60px;
+  width: 100%;
 }
