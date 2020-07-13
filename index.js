@@ -32,17 +32,20 @@ function render () {
 
   toggle.addEventListener('change', function () {
     labels.forEach(label => {
-      // DO NOT inclide the '.' when using classlist
+      // DO NOT include the '.' when using classlist
       label.classList.toggle('isActive')
     })
   })
-
-  // Add listener to lsiten to Lighten/Darken switch button
 
   // Slider 0 - 100%, Plus output color into output color bar
   slider.addEventListener('input', function () {
     sliderText.innerText = slider.value + '%'
     console.log(colorPicker.value)
+
+    // Add listener to listen to Lighten/Darken switch button
+    toggle.addEventListener('change', function () {
+
+    })
 
     // converting HEX to HSL and takeing HUE, SATURATION values
     const hsl = convert.hex.hsl(colorPicker.value)
