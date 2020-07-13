@@ -46,17 +46,6 @@ h1 {
 .switchToggle::before {
   background-color: var(--switch-color-off);
   border-radius: 32px;
-<<<<<<< HEAD
-  /* Must have this for anything to show up! */
-  content: "";
-  height: 32px;
-  left: 0;
-  position: absolute;
-  width: 64px;
-}
-
-.switchInput:checked + .switchToggle::before {
-=======
   content: "";
   height: 28px;
   left: 0;
@@ -66,19 +55,12 @@ h1 {
 }
 
 .switch-input:checked + .switchToggle::before {
->>>>>>> d8c114f5d3e2e2224de7af49b1f3060939257974
   background-color: var(--switch-color-on);
 }
 
 .switchToggle {
   padding-left: 70px;
   padding-top: 4px;
-<<<<<<< HEAD
-  /* This will control the absolutely positioned elements! */
-  position: relative;
-}
-
-=======
   position: relative;
 }
 
@@ -86,43 +68,10 @@ h1 {
   transform: translateX(34px);
 }
 
->>>>>>> d8c114f5d3e2e2224de7af49b1f3060939257974
 .switchToggle::after {
   background-color: white;
   border-radius: 50%;
   content: "";
-<<<<<<< HEAD
-  height: 24px;
-  left: 4px;
-  position: absolute;
-  /* instead of 'all' could just do background color and translate x */
-
-  transition: all;
-  top: 8px;
-  width: 24px;
-}
-
-.switchInput:checked + .switchInput::after {
-  transform: translateX(64px);
-}
-
-/* Utility classes */
-.flex {
-  display: flex;
-}
-
-.flex--column {
-  flex-direction: column;
-}
-
-.flex--justify-space-around {
-  justify-content: space-evenly;
-}
-
-/* JS classes */
-.isActive {
-  color: rgba(73, 251, 53, 0.75);
-=======
   height: 22px;
   left: 4px;
   position: absolute;
@@ -134,6 +83,5 @@ h1 {
 /* JavaScript Classes */
 .isActive {
   color: rgba(49, 218, 77, 0.75);
->>>>>>> d8c114f5d3e2e2224de7af49b1f3060939257974
   text-shadow: 0 0 1px #49fb35;
 }

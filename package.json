@@ -23,5 +23,9 @@
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.0.0"
+  },
+  "dependencies": {
+    "hex-to-hsl": "^1.0.2",
+    "requirejs": "^2.3.6"
   }
 }
