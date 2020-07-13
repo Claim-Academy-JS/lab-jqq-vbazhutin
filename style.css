@@ -2,7 +2,7 @@
   --input-color: white;
   --output-color: white;
   --switch-color-on: #34A7C1;
-  --switch-color-off: #EEEEEE;
+  --switch-color-off: #d1d0d0;
 }
 
 body {
@@ -36,4 +36,47 @@ h1 {
   background: var(--output-color);
   height: 60px;
   width: 100%;
+}
+
+
+/* Switch Input! */
+.switch-input {
+  display: none;
+}
+
+.switchToggle::before {
+  background-color: var(--switch-color-off);
+  border-radius: 32px;
+  content: "";
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 64px;
+}
+
+.switch-input:checked + .switchToggle::before {
+  background-color: var(--switch-color-on);
+}
+
+.switchToggle {
+  padding-left: 70px;
+  padding-top: 4px;
+  position: relative;
+}
+
+.switch-input:checked + .switchToggle::after {
+  transform: translateX(34px);
+}
+
+.switchToggle::after {
+  background-color: var(--input-color);
+  border-radius: 50%;
+  content: "";
+  height: 22px;
+  left: 4px;
+  position: absolute;
+  top: 5px;
+  transition: all 0.3s;
+  width: 22px;
 }
