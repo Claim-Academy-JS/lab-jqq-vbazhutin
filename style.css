@@ -2,7 +2,7 @@
   --input-color: white;
   --output-color: white;
   --switch-color-on: #34A7C1;
-  --switch-color-off: #d1d0d0;
+  --switch-color-off: #8a7777;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   border-radius: 8px;
   height: 600px;
   max-width: 600px;
-  padding: 8px;
+  padding: 16px;
 }
 
 div {
@@ -37,7 +37,6 @@ h1 {
   height: 60px;
   width: 100%;
 }
-
 
 /* Switch Input! */
 .switch-input {
@@ -70,7 +69,7 @@ h1 {
 }
 
 .switchToggle::after {
-  background-color: var(--input-color);
+  background-color: white;
   border-radius: 50%;
   content: "";
   height: 22px;

@@ -6,9 +6,6 @@ const labels = document.querySelector('.switch-container').querySelectorAll('lab
 const slider = document.querySelector('#color-slider')
 const sliderText = document.querySelector('#slider-text')
 
-console.log(sliderText)
-console.log(slider.value)
-
 // Changing input and output color containers according to the input color value
 inputColor.addEventListener('input', function () {
   HTMLRoot.style.setProperty('--input-color', this.value)
@@ -23,8 +20,7 @@ toggleSwitch.addEventListener('change', function () {
   })
 })
 
-// Slider
+// Slider 0 - 100%
 slider.addEventListener('input', function () {
   sliderText.innerText = slider.value + '%'
-  console.log(slider.value)
 })
