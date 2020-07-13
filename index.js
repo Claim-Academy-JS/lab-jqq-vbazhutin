@@ -19,16 +19,16 @@ function render () {
   const sliderText = document.querySelector('#sliderText')
 
   colorPicker.addEventListener('input', function () {
-    reset ()
+    reset()
     HTMLRoot.style.setProperty('--input-color', this.value)
     HTMLRoot.style.setProperty('--output-color', this.value)
   })
 
-  //Resets slider value and text to '0'
-  function reset () {}
-  slider.value = 0
-  sliderText.innerText = 0 + '%'
-}
+  // Resets slider value and text to '0'
+  function reset () {
+    slider.value = 0
+    sliderText.innerText = 0 + '%'
+  }
 
   toggle.addEventListener('change', function () {
     labels.forEach(label => {
