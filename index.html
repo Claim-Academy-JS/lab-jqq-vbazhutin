@@ -7,35 +7,9 @@
     <title>Color block</title>
   </head>
   <body>
+    <h1>Lighten/Darken color</h1>
     <div class="container flex flex--column flex--justify-space-around">
-      <h1>Lighten/Darken color</h1>
-
-      <div class="color input flex flex--column">
-        <label for="colorPicker">Color (RGB)</label>
-        <input type="color" name="color" id="colorPicker"/>
-      </div>
-
-      <div class="switch-container">
-        <label for="switch" class="isActive">Darken</label>
-        <input type="checkbox" id="switch" class="switchInput">
-        <label for="switch" class="switchToggle">Lighten</label>
-      </div>
-
-      <div class="light-switch-bar">
-        <div>
-        <label for="colorSlider" id="sliderText">%</label>
-        </div>
-        <input type="range" min="0" max="100" value="0" id="colorSlider">
-      </div>
-
-      <div><p>Input color:</p>
-        <div class="inputColor"></div>
-      </div>
-
-      <div><p>Altered color</p>
-        <div class="outputColor"></div>
-      </div>
-
+      <div id="root"></div>
     </div>
     <!-- 'Connect' JS to this HTML file. -->
     <script src="./scripts.js"></script>
