@@ -20,8 +20,7 @@ function render () {
 
   colorPicker.addEventListener('input', function () {
     HTMLRoot.style.setProperty('--input-color', this.value)
-    HTMLRoot.style.setProperty('--input-color', this.value)
-      .console.log(this.value)
+    HTMLRoot.style.setProperty('--output-color', this.value)
   })
 
   toggle.addEventListener('change', function () {
