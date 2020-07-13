@@ -7,17 +7,22 @@
 
 .container {
   font-size: 20px;
-  max-width: 768px;
+  max-width: 500px;
   width: 100vw;
-  height: 100vh;
+  height: 600px;
   background-color: #363E56;
   margin: 0 auto;
   border-radius: 8px;
   padding: 1rem;
 }
 
+div {
+  margin-top: 12px;
+}
+
 label {
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 p {
