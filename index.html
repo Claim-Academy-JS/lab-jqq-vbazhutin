@@ -3,38 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Color block</title>
+    <title>Color-picker</title>
   </head>
   <body>
-    <div class="container flex flex--column flex--justify-space-around">
-      <h1>Lighten/Darken color</h1>
+    <div class="container">
+      <h1>Lighten/Darken Color</h1>
 
-      <div class="color input flex flex--column">
-        <label for="colorPicker">Color (RGB)</label>
-        <input type="color" name="color" id="colorPicker"/>
+      <div>
+      <label for="colorPicker">Color input</label>
+      <input name="color-picker" type="color" id="colorPicker"/>
       </div>
 
       <div class="switch-container">
-        <label for="switch" class="isActive">Darken</label>
-        <input type="checkbox" id="switch" class="switchInput">
-        <label for="switch" class="switchToggle">Lighten</label>
+        <label for="switch" class="isActive">Lighten</label>
+        <input type="checkbox" id="switch" class="switch-input"/>
+        <label for="switch" class="switchToggle">Darken</label>
       </div>
 
-      <div class="light-switch-bar">
-        <label for="colorSlider"><span>0</span>%</label>
-        <input type="range" min="0" max="100" value="0" id="colorSlider">
+      <div class="color-slider">
+        <label for="color-slider" id="slider-text">0%</label>
+        <div>
+        <input type="range" min="0" max="100" value ="0" id="color-slider"/>
+      </div>
       </div>
 
-      <div><p>Input color:</p>
-        <div class="inputColor"></div>
+      <div><p>Input Color</p></div>
+        <div class="input-color">
       </div>
 
-      <div><p>Altered color</p>
-        <div class="outputColor"></div>
+      <div><p>Altered Color</p>
+        <div class="output-color" id="outputColor"></div>
       </div>
 
-    </div>
+      </div>
+
     <!-- 'Connect' JS to this HTML file. -->
     <script src="./scripts.js"></script>
   </body>
