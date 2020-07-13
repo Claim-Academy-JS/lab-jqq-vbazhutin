@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files '*.html, *.css, *.js'"
+    // "start": "browser-sync start --server --files '*.html, *.css, *.js'"
+    "start": "parcel index.html"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +23,8 @@
     "standard": "^14.3.3",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0"
+    "stylelint-order": "^4.0.0",
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
     "color-convert": "^2.0.1"
