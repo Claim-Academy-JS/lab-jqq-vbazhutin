@@ -2,6 +2,8 @@ const colorPicker = document.querySelector('#colorPicker')
 const HTMLRoot = document.querySelector(':root')
 const toggle = document.querySelector('#switch')
 const labels = document.querySelector('.switch-container').querySelectorAll('label')
+const slider = document.querySelector('#colorSlider')
+const sliderText = document.querySelector('#sliderText')
 
 colorPicker.addEventListener('input', function () {
   HTMLRoot.style.setProperty('--input-color', this.value)
@@ -14,4 +16,9 @@ toggle.addEventListener('change', function () {
     // DO NOT inclide the '.' when using classlist
     label.classList.toggle('isActive')
   })
+})
+
+// Slider 0 - 100%
+slider.addEventListener('input', function () {
+  sliderText.innerText = slider.value + '%'
 })
