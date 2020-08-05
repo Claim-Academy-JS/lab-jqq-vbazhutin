@@ -60,7 +60,6 @@ h1 {
 .switchToggle::before {
   background-color: var(--switch-color-off);
   border-radius: 32px;
-
   /* Must have this for anything to show up! */
   content: "";
   height: 32px;
@@ -69,14 +68,13 @@ h1 {
   width: 64px;
 }
 
-.switchInput:checked + .switchToggle::before {
+.switchInput:checked+.switchToggle::before {
   background-color: var(--switch-color-on);
 }
 
 .switchToggle {
   padding-left: 70px;
   padding-top: 4px;
-
   /* This will control the absolutely positioned elements! */
   position: relative;
 }
@@ -88,14 +86,13 @@ h1 {
   height: 24px;
   left: 4px;
   position: absolute;
-
   /* instead of 'all' could just do background color and translate x */
   transition: all 0.3s;
   top: 8px;
   width: 24px;
 }
 
-.switchInput:checked + .switchToggle::after {
+.switchInput:checked+.switchToggle::after {
   transform: translateX(32px);
 }
 

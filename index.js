@@ -35,6 +35,9 @@ function render () {
       // DO NOT include the '.' when using classlist
       label.classList.toggle('isActive')
     })
+
+    // TAKE this value and either "Darken" "Lighten" do action to color slider
+    console.log(this.parentNode.querySelector('.isActive').textContent)
   })
 
   // Slider 0 - 100%, Plus output color into output color bar
@@ -56,7 +59,12 @@ function render () {
     console.log(convert.hsl.hex(h, s, l))
 
     // Converting received data back to hex to assign HEX value to the output bar
-    HTMLRoot.style.setProperty('--output-color', '#' + convert.hsl.hex(h, s, l))
+
+    if (toggle.parentNode.querySelector('.isActive').textContent === 'Lighten') {
+      HTMLRoot.style.setProperty('--output-color', '#' + convert.hsl.hex(h, s, l))
+    } else {
+      HTMLRoot.style.setProperty('--output-color', '#' + convert.hsl.hex(h, s, -l))
+    }
   })
 }
 
